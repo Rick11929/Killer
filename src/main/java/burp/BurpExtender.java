@@ -47,7 +47,6 @@ public class BurpExtender implements IBurpExtender, ITab, IProxyListener, IHttpL
 
     public String reqURL = null;
     public String reqParameter = null;
-    public String resPrarameter = null;
 
 
     @Override
@@ -455,7 +454,7 @@ public class BurpExtender implements IBurpExtender, ITab, IProxyListener, IHttpL
             }
 
         }
-
+        // handle response
         else {
 
             IHttpRequestResponse messageInfo = message.getMessageInfo();
